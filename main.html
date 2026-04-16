@@ -9,43 +9,7 @@
 </head>
 <body>
     <div class="container" id="grid">
-        <!--<h1>Wordle</h1>
-        <p>Welcome to Wordle! Try to guess the 5-letter word in 6 attempts.</p>
-        <input type="text" id="guess" maxlength="5" placeholder="Enter your guess">
-        <button onclick="submitGuess()">Submit</button>
-        <div id="feedback"></div>
 
-        <script>
-            const targetWord = "APPLE"; // You can change this to any 5-letter word
-            let attempts = 0;
-
-            function submitGuess() {
-                const guessInput = document.getElementById('guess');
-                const guess = guessInput.value.toUpperCase();
-                if (guess.length !== 5) {
-                    alert("Please enter a 5-letter word.");
-                    return;
-                }
-                attempts++;
-                let feedback = "";
-                for (let i = 0; i < 5; i++) {
-                    if (guess[i] === targetWord[i]) {
-                        feedback += "🟩"; // Correct letter and position
-                    } else if (targetWord.includes(guess[i])) {
-                        feedback += "🟨"; // Correct letter but wrong position
-                    } else {
-                        feedback += "⬜"; // Incorrect letter
-                    }
-                }
-                document.getElementById('feedback').innerText += `Attempt ${attempts}: ${guess} - ${feedback}\n`;
-                guessInput.value = "";
-                if (guess === targetWord) {
-                    alert("Congratulations! You've guessed the word!");
-                } else if (attempts >= 6) {
-                    alert(`Game Over! The correct word was: ${targetWord}`);
-                }
-            }
-        </script>   -->
     
         
     </div>

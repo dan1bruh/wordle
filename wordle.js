@@ -34,8 +34,8 @@ function checkGuess(guess) {
     for (let i = 0; i < 5; i++) {
         if (guessLetters[i] === wordLetters[i]) {
             result[i] = 'green';
-            wordLetters[i] = null;    // mark as used
-            guessLetters[i] = null;   // mark as used
+            wordLetters[i] = null;    //used
+            guessLetters[i] = null;   //used
         }
     }
 
@@ -57,8 +57,6 @@ function checkGuess(guess) {
 createGrid();
 
 document.addEventListener('keydown', (e) => {
-    //if all rows are filled, do nothing
-    if (currentRow >= 6) return; 
 
     /*
     check if pressed key is letter between a and z,
